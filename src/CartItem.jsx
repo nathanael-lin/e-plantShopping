@@ -28,6 +28,11 @@ const CartItem = ({ onContinueShopping }) => {
     onContinueShopping(e);
   };
 
+  // Alert the user that checkout functionality will be added in a future release
+  const handleCheckoutShopping = (e) => {
+    alert('Coming Soon');
+  };
+
   // Increase the quantity of the given item by 1 via Redux updateQuantity action
   const handleIncrement = (item) => {
     dispatch(updateQuantity({ name: item.name, quantity: item.quantity + 1 }));
@@ -107,10 +112,7 @@ const CartItem = ({ onContinueShopping }) => {
           Continue Shopping
         </button>
         <br />
-        <button
-          className="get-started-button1"
-          onClick={(e) => { e.preventDefault(); alert('Coming Soon'); }}
-        >
+        <button className="get-started-button1" onClick={(e) => handleCheckoutShopping(e)}>
           Checkout
         </button>
       </div>
