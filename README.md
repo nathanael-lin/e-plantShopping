@@ -16,6 +16,7 @@ A React.js front-end shopping application for **Paradise Nursery** — a fiction
 - React-Redux (`Provider`, `useDispatch`, `useSelector`)
 
 ## Project Structure
+```
 src/
 ├── App.jsx # Landing page
 ├── App.css # Background image styles
@@ -25,7 +26,7 @@ src/
 ├── CartSlice.jsx # Redux slice (addItem, removeItem, updateQuantity)
 ├── store.js # Redux store configuration
 └── main.jsx # App entry point with Redux Provider
-
+```
 
 ## Getting Started
 
